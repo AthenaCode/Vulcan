@@ -1,0 +1,34 @@
+h3 {
+	text-align: left;
+	text-decoration: none;
+	color: #609;
+	cursor: pointer;
+	font-size: 18px;
+	white-space: nowrap;
+	font-weight: normal;
+	text-overflow: ellipsis;
+	display: block;
+	line-height: 1.2;
+	margin: 0;
+	padding-left: 15px;
+}
+
+cite {
+	text-align: left;
+	line-height: 16px;
+	padding-left: 15px;
+	white-space: nowrap;
+	display: block;
+	color: #006621;
+	font-style: normal;
+	font-size: 14px;
+}
+span{
+	text-align: left;
+	display: block;
+	padding-left: 15px;
+	color: #545454;
+	word-wrap: break-word;
+	font-family: 'Roboto',arial,sans-serif;
+	font-size: small;
+}
