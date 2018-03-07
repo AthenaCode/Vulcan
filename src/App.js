@@ -12,8 +12,6 @@ class App extends Component {
 				<br/>
 				<QuestionOne />
 				<br/>
-				<QuestionTwo />
-				<br/>
 				<QuestionThree />
 				<br/>
 				<QuestionFour />

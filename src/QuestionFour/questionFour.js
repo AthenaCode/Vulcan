@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import createPlotlyComponent from 'react-plotlyjs'
+import createPlotlyComponent from 'react-plotlyjs';
 import Plotly from 'plotly.js/dist/plotly-cartesian';
 
 const PlotlyComponent = createPlotlyComponent(Plotly);
@@ -7,9 +7,9 @@ const PlotlyComponent = createPlotlyComponent(Plotly);
 
 export default class QuestionFour extends Component {
 	render(){
-    var xValues = ['Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'];
-    var yValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
-    var zValues = [
+    let xValues = ['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wednesday'];
+    let yValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+    let zValues = [
         [56, 56, 56, 57, 53, 56, 55], 
         [56, 55, 56, 59, 52, 54, 54], 
         [58, 56, 62, 60, 57, 59, 57], 
@@ -36,12 +36,12 @@ export default class QuestionFour extends Component {
         [55, 51, 60, 54, 52, 50, 53]
       ];
 
-    var colorscaleValue = [
+    let colorscaleValue = [
       [0, '#3D9970'],
       [1, '#001f3f']
     ];
 
-    var data = [{
+    let data = [{
       x: xValues,
       y: yValues,
       z: zValues,
@@ -50,7 +50,7 @@ export default class QuestionFour extends Component {
       showscale: true
     }];
 
-    var layout = {
+    let layout = {
       title: '',
       annotations: [],
       xaxis: {
@@ -67,11 +67,11 @@ export default class QuestionFour extends Component {
       width: 1000
     };
 
-    for ( var i = 0; i < yValues.length; i++ ) {
-      for ( var j = 0; j < xValues.length; j++ ) {
-        var currentValue = zValues[i][j];
-        var textColor = 'white';
-        var result = {
+    for ( let i = 0; i < yValues.length; i++ ) {
+      for ( let j = 0; j < xValues.length; j++ ) {
+        let currentValue = zValues[i][j];
+        let textColor = 'white';
+        let result = {
           xref: 'x1',
           yref: 'y1',
           x: xValues[j],
